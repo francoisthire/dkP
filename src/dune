@@ -1,0 +1,5 @@
+(executable
+        (name dkP)
+        (public_name dkP)
+        (package dkP)
+        (libraries dkmeta dedukti))

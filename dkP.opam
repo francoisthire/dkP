@@ -1,0 +1,19 @@
+synopsis: "Yet another tool in the Dedukti landscape"
+description:
+"""
+A corrosive tool for Dedukti which remove rewrite rules
+"""
+opam-version: "0.1"
+maintainer: "francois.thire@lsv.fr"
+bug-reports: "https://github.com/francoisthire/dkP/issues"
+homepage: "https://github.com/francoisthire/dkP"
+dev-repo: "git+https://github.com/francoisthire/dkP.git"
+authors: [ "François Thiré <francois.thire@lsv.fr>" ]
+license: "CeCILL"
+
+depends: [
+  "ocaml"        {         >= "4.04.0" }
+  "dedukti"
+]
+
+build: [ [ "dune" "build" "-p" name "-j" jobs ] ]
